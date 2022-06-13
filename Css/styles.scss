@@ -17,6 +17,7 @@
     --color-gray-5: #2a2e35;
     --color-gray-6: #12181b;
     --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.2)
 }
 body{
     background-color: var(--color-primary);
@@ -64,4 +65,39 @@ section{
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+}
+
+//Controls
+.controlls{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    .active-btn{
+        background-color: var(--color-secundary) !important;
+        transition: all .4s ease-in-out;
+    }
+    .control{
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-gray-4);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: .7rem 0;
+        box-shadow: var(--box-shadow-1);
+        i{
+            font-size: 1.2rem;
+            //color: var(--color-gray-2);
+            pointer-events: none;
+        }
+    }
 }
