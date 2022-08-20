@@ -593,5 +593,18 @@ section {
 
 .timeline .timeline-item h5 {
   padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.timeline .timeline-item h5 span {
+  color: var(--color-gray-2);
+  font-weight: 500;
+  font-size: 1.2ram;
+}
+
+.timeline .timeline-item h5 p {
+  color: var(--color-gray-2);
 }
 /*# sourceMappingURL=styles.css.map */
