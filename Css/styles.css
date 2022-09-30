@@ -595,8 +595,7 @@ section {
 .cards-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
