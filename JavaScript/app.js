@@ -39,3 +39,7 @@ function pageTransition(){
     })
 }
 pageTransition();
+
+function downloadCV(){
+    window.open("https://download937.mediafire.com/jlyx2ahwa4lg/0f20bjkbhkbkk4e/Hoja+de+vida.pdf", '_blank')
+}

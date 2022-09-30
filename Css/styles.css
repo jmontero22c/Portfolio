@@ -592,6 +592,56 @@ section {
           transform: translateY(50%);
 }
 
+.cards-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.cards-container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.cards-container .card .img-card {
+  width: 90px;
+  height: 90px;
+}
+
+.cards-container .card .img-card img {
+  width: auto;
+  height: inherit;
+  padding: 20px;
+}
+
+.cards-container .card .text-card {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards-container .card:hover {
+  background-color: var(--color-secundary);
+}
+
 /*TimeLine*/
 .timeline {
   display: -ms-grid;
@@ -720,6 +770,12 @@ section {
   font-size: 1.4rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.portfolios .portfolio-item .hover-item p {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
 }
 
 .portfolios .portfolio-item .hover-item .icons {
@@ -927,6 +983,22 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+#form-send-contact {
+  height: 40px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
